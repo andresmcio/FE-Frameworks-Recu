@@ -1,0 +1,181 @@
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+  }
+
+@keyframes imageChanger {
+    0%{
+        background-image: url('../../../../public/assets/streamer.jpg');
+    }
+
+    34%{
+        background-image: url('../../../../public/assets/girl.jpg');
+    }
+
+    51%{
+        background-image: url('../../../../public/assets/streamerGuy.jpg');
+    }
+
+    68%{
+        background-image: url('../../../../public/assets/gamer.jpg');
+    }
+
+    85%{
+        background-image: url('../../../../public/assets/VR.jpg');
+    }
+
+    100%{
+        background-image: url('../../../../public/assets/streamguy.jpg');
+    }
+}
+
+.mainHome{
+    display: flex; /*Cambiar a none y pasar propiedades de abajo a la clase displayToggle*/
+    flex-wrap: wrap;
+    margin: 5%;
+}
+
+.displayToggle{
+    display: none; /*Cambiar a flex después del sprint*/
+}
+
+main{
+    justify-content: center;
+    width: 90%;
+}
+
+#intro{
+    background-color: #8426efb9;
+    border-radius: 0.5em;
+    height: 25rem;
+    justify-content: center;
+    padding: 3%;
+    width: 90%;
+}
+
+.heading-tittle{
+    color: #cffbff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.typing-effect{
+    color: #29d5e2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    justify-content: center;
+    text-align: justify;
+}
+
+.typing-effect::after {
+    content: "|";
+    color: #29d5e2;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    animation:  none;
+  }
+  
+  .showAnim.typing-effect::after {
+    animation: blink 1s step-end infinite;
+  }
+
+  .heading-content>figure{
+    height: 14rem;
+    width: 100%;
+  }
+
+.image-loop{
+    animation: imageChanger 25s infinite alternate ease-in-out;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 0.5em;
+    height: 100%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.categories{
+    align-content: center;
+    background-color: #cffbffb9;
+    border-radius: 0.5em;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+    width: 90%;
+}
+
+.cat-content{
+    align-items: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: 90%;
+}
+
+.cat-tittle{
+    color: #8326ef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.cat-description{
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    order: 1;
+}
+
+.cat-image{
+    border-radius: 0.5em;
+    order: -1;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.cat-video{
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+}
+
+.cat-video>video{
+    border-radius: 0.5em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    left: 1rem;
+    object-fit: contain;
+    order: -1;
+    position: relative;
+    width: 100%;
+}
+
+.cat-button{
+    background-color: #8326ef;
+    border-radius: 0.5em;
+    box-shadow: black 3px;
+    color: #29d5e2;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    left: 25%;
+    order: 4;
+    padding: 0.5rem;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    z-index: 5;
+}
+.cat-button>a{
+    color: #cffbff;
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

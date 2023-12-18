@@ -1,0 +1,62 @@
+@media screen and (min-width: 1200px){
+
+
+    .heading-content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .heading-tittle, .typing-effect{
+        width: 40%;
+    }
+
+    .heading-tittle{
+        font-size: 2rem;
+        height: fit-content;
+    }
+
+    .typing-effect{
+        font-size: 1.4rem;
+        order: 1;
+        position: relative;
+        top: -28rem;
+    }
+
+    .heading-content>figure{
+        height: 35rem;
+        left: 10%; 
+        top: -1.5rem;
+        width: 50%;
+    }
+
+    .image-loop{
+        order: -1;
+        width: 100%;
+    }
+
+    .categories{
+        width: 90%;
+    }
+
+    .cat-tittle{
+        font-size: 2rem;
+    }
+
+    .cat-content>figure{
+        order: 1;
+        width: 40%;
+    }
+
+    .cat-video{
+        order: 1;
+        width: 40%;
+    }
+
+    .cat-description{
+        font-size: 1.5rem;
+        order: 1;
+        margin-right: 10%;
+        width: 50%;
+    }
+}
