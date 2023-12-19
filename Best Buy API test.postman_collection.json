@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "e9ef2047-3729-4e10-ae47-40f583529126",
+		"name": "Best Buy API test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27564569"
+	},
+	"item": [
+		{
+			"name": "Products by category: Webcams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bestbuy.com/v1/products(categoryPath.id=abcat0515046)?apiKey=3uUU3Hg6RrcV2AqwgG5ATPgU&format=json&show=sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bestbuy",
+						"com"
+					],
+					"path": [
+						"v1",
+						"products(categoryPath.id=abcat0515046)"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "3uUU3Hg6RrcV2AqwgG5ATPgU"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "show",
+							"value": "sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products by category: Microphones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bestbuy.com/v1/products(categoryPath.id=pcmcat152100050038)?apiKey=3uUU3Hg6RrcV2AqwgG5ATPgU&format=json&show=sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bestbuy",
+						"com"
+					],
+					"path": [
+						"v1",
+						"products(categoryPath.id=pcmcat152100050038)"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "3uUU3Hg6RrcV2AqwgG5ATPgU"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "show",
+							"value": "sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products by category: Capture cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bestbuy.com/v1/products(categoryPath.id=pcmcat306400050031)?apiKey=3uUU3Hg6RrcV2AqwgG5ATPgU&format=json&show=sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bestbuy",
+						"com"
+					],
+					"path": [
+						"v1",
+						"products(categoryPath.id=pcmcat306400050031)"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "3uUU3Hg6RrcV2AqwgG5ATPgU"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "show",
+							"value": "sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products by category: Monitors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bestbuy.com/v1/products(categoryPath.id=pcmcat304600050011)?apiKey=3uUU3Hg6RrcV2AqwgG5ATPgU&format=json&show=sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bestbuy",
+						"com"
+					],
+					"path": [
+						"v1",
+						"products(categoryPath.id=pcmcat304600050011)"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "3uUU3Hg6RrcV2AqwgG5ATPgU"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "show",
+							"value": "sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product by SKU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.bestbuy.com/v1/products(sku=1097389)?apiKey=3uUU3Hg6RrcV2AqwgG5ATPgU&format=json&show=sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature",
+					"protocol": "https",
+					"host": [
+						"api",
+						"bestbuy",
+						"com"
+					],
+					"path": [
+						"v1",
+						"products(sku=1097389)"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "3uUU3Hg6RrcV2AqwgG5ATPgU"
+						},
+						{
+							"key": "format",
+							"value": "json"
+						},
+						{
+							"key": "show",
+							"value": "sku,name,salePrice,image,largeFrontImage,mediumImage,thumbnailImage,largeImage,customerReviewAverage,features.feature"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -12,11 +12,11 @@ const Header = () => {
         const isHomePage = location.pathname === '/';
         const headerClass = isHomePage ? 'mainHome' : 'not-main-Home';
 
-        // Agrega o quita la clase según si estás en la ruta '/' o no
+        
         document.querySelector('header').classList.add(headerClass);
 
         return () => {
-        // Limpia la clase cuando el componente se desmonta
+        
         document.querySelector('header').classList.remove('mainHome', 'not-main-Home');
     };
   }, [location.pathname]);
@@ -33,7 +33,7 @@ const Header = () => {
         <div className="header-wrapper2">
             <form action="/" method="get" className="search-bar">
                 <fieldset className="input-field">
-                    <div class="search-btn" type="submit"><span className="material-icons">search</span></div>
+                    <div className="search-btn" type="submit"><span className="material-icons">search</span></div>
                     <input type="text" name="search"/>
                 </fieldset>
             </form>
@@ -48,7 +48,7 @@ const Header = () => {
                     <a href="">Nosotros</a>
                     <a href="">Contáctanos</a>
                 </nav>
-                <nav class="collapsible-body nav-body2">
+                <nav className="collapsible-body nav-body2">
                     <a href="/products">Productos</a>
                     <a href=""><span className="material-icons">shopping_cart</span>Carrito</a>
                     <a href="/login"><span className="material-icons">account_circle</span>Entra</a>

@@ -1,0 +1,6 @@
+En la siguiente actividad se hizo un mock up de un e-commerce de dispositivos para gamers/streammers, haciendo uso de la API de best buy.
+La aplicación consta de un back-end para la gestión de registro e inicio de sesión y un front con las consultas de los productos.
+
+## Instalación
+
+Clonar ambos aplicativos y ejecutar primero la API, luego la aplicación de react en la carpeta "rec".

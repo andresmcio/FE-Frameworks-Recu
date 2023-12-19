@@ -1,0 +1,34 @@
+@media screen and (min-width: 1200px) {
+    .product-filter{
+        background-color: #cffbffb9;
+        margin-left: 1vw;
+        margin-right: 1vw;
+      }
+             
+      .product-filter, .mobile-toggled, .category-wrapper,.mobile-toggled>li{
+        width: 20vw;
+       }
+  
+       .category-wrapper, .expanded-list, .category-header, .category-list, .category-list>li{
+        width: 17vw;
+       }
+  
+       .category-header, .category-list, ul.collapsible {
+        padding: 1vw;
+       }
+  
+       .mobile-toggle{
+        display: none;
+       }
+  
+       ul.mobile-toggled{
+        border-radius: 0.5em;
+        display: flex;
+       }
+  
+       .category-header{
+        font-size: 0.9rem;
+        padding: 0;
+        width: 15vw
+       }
+}

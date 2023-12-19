@@ -1,0 +1,153 @@
+.products-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-container{
+    background-color: #cffbffb9;
+    border-radius: 0.5em;
+    display: flex;
+    height: max-content;
+    margin-top: 2rem;
+    padding: 3%;
+    position: relative;
+    width: 90%;
+}
+
+.product-main-display{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.title-row{
+    margin-left: -9%;
+    width: 90%;
+}
+
+.title-row a{
+    color: #8326ef;
+    font-size: 1.3rem;
+}
+
+.content-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-row .image-column{
+    height: 12rem;
+    flex-grow: 1rem;
+    width: 12rem;
+}
+
+.img-main{
+    height: 90%;
+    width: 100%;
+}
+
+.shopping-column{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shopping-column span{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.pricing{
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: center;
+    width: 100%;
+}
+
+.product-rating{
+    justify-content: center;
+    width: 100%;
+}
+
+.product-rating i{
+    color: #8326ef;
+    font-size: 1.2rem;
+}
+
+.shopping-column .btn-add2Cart{
+    align-items: center;
+    background-color: #8326ef;
+    border-radius: 0.5em;
+    color: #29d5e2;
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.toggler{
+    color: #8326ef;
+    position: absolute;
+    right: 5%;
+}
+
+.product-more-info{
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-more-info .image-column{
+    height: 10rem;
+    margin-top: 3%;
+    width: 15rem;
+}
+
+.product-more-info .image-column img{
+    height: 100%;
+    width: 100%;
+}
+
+.info-content-row{
+    background-color: #8326ef;
+    border-radius: 0 0 0.5em 0.5em;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3%;
+}
+
+.info-content-row a{
+    color: #29d5e2;
+    font-size: 1.3rem;
+}
+
+.product-feature{
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.bottom-row, .bottom-row a{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bottom-row a{
+    margin-left: 3rem;
+}
+

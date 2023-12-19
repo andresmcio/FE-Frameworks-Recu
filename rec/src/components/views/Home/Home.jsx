@@ -4,17 +4,17 @@ import './indexDesktop.css';
 import React, { useContext } from 'react';
 import { MyContext } from '../../../context/MyProvider';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { typing } from '../../../helpers/typing';
+//import { typing } from '../../../helpers/typing';
 
 const Home = () => {
 
     const isLogin = useContext(MyContext);
     const Navigate = useNavigate();
-    const type = typing();
+    //const type = typing();
 
 
     return (
-        <main className="mainHome bg-image" id="homeMain" onLoad={type}>
+        <main className="mainHome bg-image" id="homeMain">
             <section className="mainHome" id="intro">
                 <div className="heading-content">
                     <h4 className="heading-tittle">Enriquece tu contenido con</h4>
@@ -57,7 +57,7 @@ const Home = () => {
                 <div className="cat-content">
                     <h4 className="cat-tittle">Canjeables</h4>
                     <span className="cat-description">Recompensa a tus espectadores con gran variedad de artículos canjeables, crea tu marca y fideliza</span>
-                    <div className="cat-video"><video src="/assets/merchVideo.mp4" autoplay loop></video>
+                    <div className="cat-video"><video src="/assets/merchVideo.mp4" autoPlay loop></video>
                     </div>            
                     <div className="cat-button"><a href="">Ver productos</a></div>
                 </div>

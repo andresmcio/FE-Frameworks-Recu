@@ -1,17 +1,19 @@
-const message1 = "Mercancía personalizable canjeable por tus espectadores";
-const message2 = "Interacciones divertidas que promueven tu salud";
-const message3 = "Dispositivos que faciliten tu transmisión";
-const message4 = "Objetos para tu comodidad";
 
-const messages = [message1, message2, message3, message4];
-
-let typeText = document.querySelector(".typing-effect");
-let isAdding = true;
-let index = 0;
-let textToBeTypedIndex = 0;
-            
 export function typing(){
-        setTimeout(function(){
+    
+    const message1 = "Mercancía personalizable canjeable por tus espectadores";
+    const message2 = "Interacciones divertidas que promueven tu salud";
+    const message3 = "Dispositivos que faciliten tu transmisión";
+    const message4 = "Objetos para tu comodidad";
+    
+    const messages = [message1, message2, message3, message4];
+    
+    let typeText = document.querySelector(".typing-effect");
+    let isAdding = true;
+    let index = 0;
+    let textToBeTypedIndex = 0;
+    
+    setTimeout(function(){
 
             typeText.innerText = messages[textToBeTypedIndex].slice(0, index);
 

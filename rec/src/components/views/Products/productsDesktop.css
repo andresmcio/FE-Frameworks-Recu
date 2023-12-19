@@ -1,0 +1,30 @@
+@media screen and (min-width: 1200px) {
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .products-wrapper{
+        gap: 1%;
+        width: 74%;
+    }
+
+    .product-container{
+        min-height: 27rem;
+        width: 24%;
+    }
+
+    .content-row{
+        flex-wrap: wrap;
+    }
+
+    .title-row a{
+        font-size: 1rem;
+    }
+
+    .shopping-column{
+        gap: 1rem;
+    }
+    
+}

@@ -1,0 +1,30 @@
+@media screen and (min-width: 650px) {
+
+    .products-wrapper{
+        gap: 5%;
+    }
+
+    .product-container{
+        min-height: 18rem;
+        width: 45%;
+    }
+
+    .product-container .image-column{
+        flex-grow: 50px;
+        height: 8rem;
+        width: 10rem;
+    }
+
+    .pricing{
+        font-size: 1rem;
+    }
+
+    .product-rating i {
+        font-size: 1rem;
+    }
+
+    .shopping-column .btn-add2Cart{
+        font-size: 0.8rem;
+    }
+
+}

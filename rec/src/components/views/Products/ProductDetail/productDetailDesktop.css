@@ -1,0 +1,57 @@
+@media screen and (min-width: 1200px){
+
+    main{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+     .product-detail, .product-description-wrapper{
+      margin: 0;
+      width: 70vw;
+     }
+
+     .product-main-wrapper{
+      gap: 2rem;
+     }
+
+     .product-images{
+      width: 40vw;
+     }
+
+     .product-info{
+      align-items: flex-start;
+      justify-content: center;
+      justify-items: center;
+      order: 1;
+      width: 27vw;
+     }
+
+     .product-info>h3{
+      height: 2rem;
+      line-height: 2rem;
+      margin: 0;
+     }
+
+     .product-pricing, .product-rating{
+      justify-self: flex-start;
+      position: relative;
+      width: 15vw;
+     }
+
+     .btn-add2Cart{
+      height: 4rem;
+      margin-top: 5rem;
+      position: static;
+      text-align: center;
+     }
+    }
+
+    @media screen and (min-width:1908px){
+      
+      .btn-add2Cart{
+        left: -12rem;
+        position: relative;
+        top: 5rem;
+      }
+    }
+    
