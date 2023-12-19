@@ -100,7 +100,7 @@ const Products = () => {
                             <div className="content-row">
                                 <a href={`/products/${product.sku}`} className="product-image-link">
                                     <figure className="image-column">
-                                        <img className="img-main" src={product.mediumImage} alt="" />
+                                        <img className="img-main" src={product.image} alt="" />
                                     </figure>
                                 </a>
                                 <div className="shopping-column">
@@ -117,7 +117,7 @@ const Products = () => {
                         <article className="product-more-info">
                             <a href={`/products/${product.sku}`} className="product-image-link">
                                 <figure className="image-column">
-                                    <img className="img-main" src={product.largeImage} alt="" />
+                                    <img className="img-main" src={product.image} alt="" />
                                 </figure>
                             </a>
                             <div className="info-content-row">

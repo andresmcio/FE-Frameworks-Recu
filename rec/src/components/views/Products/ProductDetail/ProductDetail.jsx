@@ -7,7 +7,6 @@ import AsideFilter from '../../../partials/AsideFilter/AsideFilter';
 
 
 const ProductDetail = () => {
-
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -16,55 +15,60 @@ const ProductDetail = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-        try {
+            try {
+                const response = await fetch('http://localhost:2023/products', {
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
 
-            const response = await fetch(`http://localhost:2023/products/${id}`, {headers: {
-                'Content-Type': 'application/json',
-            }});
+                if (!response.ok) {
+                    throw new Error(response.statusText);
+                }
 
-            if (!response.ok){
-                throw Error(response.statusText);
+                const productList = await response.json();
+                setData(productList);
+                setLoading(false);
+                setError(null);
+            } catch (error) {
+                setError(error.message);
+                setLoading(false);
             }
-
-            const result = await response.json();
-            
-            setData(result);
-            setLoading(false);
-            setError(null);
-        } catch (error) {
-            setError(error.message);
-            setLoading(false);
-        }
         };
+
         fetchData();
-    }, [id]);
+    }, []);
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
+    const productToRender = data.find((product) => product.id === id);
+
+    if (!productToRender) {
+        return <div>Product not found</div>;
+    }
+
     return (
         <main className='not-main-Home'>
-            <AsideFilter/>
+            <AsideFilter />
             <section className='product-detail'>
                 <article className="product-wrapper">
                     <div className="product-main-wrapper">
                         <figure className="product-images">
                             <div className="product-thumbnails">
-                                
-                                <img src={`${data.largeFrontImage}`} alt="feature"/> 
-                                <img src={`${data.mediumImage}`} alt="feature"/>
-                                <img src={`${data.thumbnailImage}`} alt="feature"/>
-                                <img src={`${data.largeImage}`} alt="feature"/>
-
+                                <img src={`${productToRender.largeFrontImage}`} alt="feature" />
+                                <img src={`${productToRender.mediumImage}`} alt="feature" />
+                                <img src={`${productToRender.thumbnailImage}`} alt="feature" />
+                                <img src={`${productToRender.largeImage}`} alt="feature" />
                             </div>
-                            <img className="img-main" src={`${data.image}`} alt=""/>
+                            <img className="img-main" src={`${productToRender.image}`} alt="" />
                         </figure>
                         <div className="product-info">
-                            <h3> {data.name} </h3>
+                            <h3>{productToRender.name}</h3>
                             <span className="product-rating">
-                                {data.customerReviewAverage} <i className='material-icons'>star</i>
+                                {productToRender.customerReviewAverage} <i className='material-icons'>star</i>
                             </span>
-                            <span className="pricing"><i className="material-icons">attach_money</i> {data.salePrice} </span>
+                            <span className="pricing"><i className="material-icons">attach_money</i> {productToRender.salePrice} </span>
                             <a className="btn-add2Cart"><i className="material-icons">add_shopping_cart</i>Comprar</a>
                         </div>
                     </div>
@@ -79,7 +83,7 @@ const ProductDetail = () => {
                         </div>
                         <div className="tab-content">
                             <div id="about" className="tab-pane active">
-                                {data.features && Array.isArray(data.features) && data.features.map((feature, index) => (
+                                {productToRender.features && Array.isArray(productToRender.features) && productToRender.features.map((feature, index) => (
                                     <span key={index} className='product-feature'>{feature.feature}</span>
                                 ))}
                             </div>
@@ -91,7 +95,7 @@ const ProductDetail = () => {
                             </div>
                         </div>
                     </div>
-                </article> 
+                </article>
             </section>
         </main>
     );

@@ -31,7 +31,7 @@ const Home = () => {
                     <figure>
                         <img className="cat-image" src="/assets/devices.jpg" alt="Devices"/>
                     </figure>
-                    <div className="cat-button"><a href="">Ver productos</a></div></div>
+                    <div className="cat-button"><NavLink to="/products">Ver productos</NavLink></div></div>
             </section>
             <section className="mainHome categories" id="cat2">
                 <div className="cat-content">
@@ -40,7 +40,7 @@ const Home = () => {
                     <figure>
                         <img className="cat-image" src="/assets/health.jpg" alt="Health"/>
                     </figure>
-                    <div className="cat-button"><a href="">Ver productos</a></div>
+                    <div className="cat-button"><NavLink to="/products">Ver productos</NavLink></div>
                 </div>
             </section>
             <section className="mainHome categories" id="cat3">
@@ -50,7 +50,7 @@ const Home = () => {
                     <figure>
                         <img className="cat-image" src="/assets/space.jpg" alt="Furniture"/>
                     </figure>
-                    <div className="cat-button"><a href="">Ver productos</a></div>
+                    <div className="cat-button"><NavLink to="/products">Ver productos</NavLink></div>
                 </div>
             </section>
             <section className="mainHome categories" id="cat4">
@@ -59,7 +59,7 @@ const Home = () => {
                     <span className="cat-description">Recompensa a tus espectadores con gran variedad de artículos canjeables, crea tu marca y fideliza</span>
                     <div className="cat-video"><video src="/assets/merchVideo.mp4" autoPlay loop></video>
                     </div>            
-                    <div className="cat-button"><a href="">Ver productos</a></div>
+                    <div className="cat-button"><NavLink to="/products">Ver productos</NavLink></div>
                 </div>
             </section>
         </main>
